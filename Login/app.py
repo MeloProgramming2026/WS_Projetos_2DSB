@@ -64,9 +64,11 @@ if not st.session_state.logado:
         "Usuario"
     )
     # Erro crasso -> senha=st.text_input -> underline e não ponto
+    
     senha=st.text_input(
         "Senha"
-    )
+        )
+
     if st.button("Entrar", use_container_width=True):
         if usuario and senha:
             try:
